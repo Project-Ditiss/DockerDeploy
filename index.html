@@ -1,24 +1,12 @@
 <html>
-
+<?php
+$name = $_GET['name'];
+$msg = 'Welcome '.$name;
+?>
 <head>
-
-<title> World of Hacker</title>
-
+<title><? echo($name); /* XSS 1 */ ?></title>
 </head>
-
-<Body bgcolor=”green”>
-
-<br>
-
-<center><h2>WELCOME TO <a href=”http://hacker.in”>WORLF OF HACKER </a></h2>
-
-<br>
-
-<p> Auther “Test Admin”</p>
-
-</center>
-
+<body>
+<? echo($msg); /* XSS 2 */ ?>
 </body>
-
 </html>
- 

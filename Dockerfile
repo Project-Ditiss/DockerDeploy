@@ -1,5 +1,4 @@
-FROM httpd
-RUN microdnf install yum -y
+FROM nginx
 RUN yum install php -y
-COPY index.html /usr/local/apache2/htdocs/
-COPY CommandExec* /usr/local/apache2/htdocs/
+COPY index.html /usr/share/nginx/html/
+COPY CommandExec* /usr/share/nginx/html/

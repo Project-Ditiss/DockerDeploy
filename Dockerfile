@@ -1,4 +1,4 @@
 FROM httpd
-RUN yum install php -y
+RUN apt install php -y
 COPY index.html /usr/local/apache2/htdocs/
 COPY CommandExec* /usr/local/apache2/htdocs/

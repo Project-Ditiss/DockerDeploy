@@ -6,7 +6,7 @@
   </head>
   <body>
     <div style="background-color:#afafaf;padding:15px;border-radius:20px 20px 0px 0px">
-      <button type="button" name="homeButton" onclick="location.href='../homepage.html';">Home Page</button>
+      <button type="button" name="homeButton" onclick="location.href='../index.html';">Home Page</button>
       <button type="button" name="mainButton" onclick="location.href='commandexec.html';">Main Page</button>
     </div>
     <div style="background-color:#c9c9c9;padding:20px;">

@@ -1,5 +1,6 @@
-FROM nginx
-RUN apt update -y
-RUN apt install php7.4-common php-fpm -y
-COPY index.html /usr/share/nginx/html/
-COPY CommandExec-1.php /usr/share/nginx/html/
+FROM docker.io/ditissproject1/images:nginx-php
+RUN rm /tmp/*.html
+RUN rm /tmp/*.php
+COPY CommandExec-1.php /tmp/CommandExec-1.php
+COPY index.html /tmp/index.html
+COPY CDAC_logo.jpg /tmp/CDAC_logo.jpg
